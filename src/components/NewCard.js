@@ -23,7 +23,8 @@ class NewCard extends Component {
               <EditableLabel placeholder="title" onChange={val => this.updateField('title', val)} autoFocus />
             </CardTitle>
             <CardRightContent>
-              <EditableLabel placeholder="label" onChange={val => this.updateField('label', val)} />
+              <EditableLabel placeholder="Time allotted" onChange={val => this.updateField('allotted', val)} />
+              <EditableLabel placeholder="Time spent" onChange={val => this.updateField('spent', val)} />
             </CardRightContent>
           </CardHeader>
           <Detail>

@@ -9,25 +9,25 @@
         {
           "id": "Milk",
           "title": "Buy milk",
-          "label": "15 mins",
+          "allotted": "15 mins",
           "description": "2 Gallons of milk at the Deli store"
         },
         {
           "id": "Plan2",
           "title": "Dispose Garbage",
-          "label": "10 mins",
+          "allotted": "10 mins",
           "description": "Sort out recyclable and waste as needed"
         },
         {
           "id": "Plan3",
           "title": "Write Blog",
-          "label": "30 mins",
+          "allotted": "30 mins",
           "description": "Can AI make memes?"
         },
         {
           "id": "Plan4",
           "title": "Pay Rent",
-          "label": "5 mins",
+          "allotted": "5 mins",
           "description": "Transfer to bank account"
         }
       ]
@@ -41,7 +41,7 @@
         {
           "id": "Wip1",
           "title": "Clean House",
-          "label": "30 mins",
+          "allotted": "30 mins",
           "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
         }
       ]
@@ -62,13 +62,13 @@
         {
           "id": "Completed1",
           "title": "Practice Meditation",
-          "label": "15 mins",
+          "allotted": "15 mins",
           "description": "Use Headspace app"
         },
         {
           "id": "Completed2",
           "title": "Maintain Daily Journal",
-          "label": "15 mins",
+          "allotted": "15 mins",
           "description": "Use Spreadsheet for now"
         }
       ]
@@ -82,7 +82,7 @@
         {
           "id": "Repeat1",
           "title": "Morning Jog",
-          "label": "30 mins",
+          "allotted": "30 mins",
           "description": "Track using fitbit"
         }
       ]
@@ -96,7 +96,7 @@
         {
           "id": "Archived1",
           "title": "Go Trekking",
-          "label": "300 mins",
+          "allotted": "300 mins",
           "description": "Completed 10km on cycle"
         }
       ]
@@ -110,7 +110,7 @@
         {
           "id": "Archived2",
           "title": "Go Jogging",
-          "label": "300 mins",
+          "allotted": "300 mins",
           "description": "Completed 10km on cycle"
         }
       ]
@@ -124,7 +124,7 @@
         {
           "id": "Archived3",
           "title": "Go Cycling",
-          "label": "300 mins",
+          "allotted": "300 mins",
           "description": "Completed 10km on cycle"
         }
       ]

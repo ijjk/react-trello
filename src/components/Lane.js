@@ -97,6 +97,16 @@ class Lane extends Component {
     this.props.onCardAdd(card, laneId)
   }
 
+  updateCard = card => {
+    const laneId = this.props.id
+    const cards = this.props.cards.map(curCard => {
+      if (curCard.id === card.id) return card
+      return curCard
+    })
+    this.props.actions.updateCards({laneId, cards})
+    this.props.onCardUpdate(card, laneId)
+  }
+
   renderAddCardLink = () => {
     const {addCardLink} = this.props
     if (addCardLink) {
@@ -171,6 +181,7 @@ class Lane extends Component {
           removeCard={this.removeCard}
           onClick={e => this.handleCardClick(e, card)}
           onDelete={this.props.onCardDelete}
+          onUpdate={this.updateCard}
           editable={editable}
           hideCardDeleteIcon={hideCardDeleteIcon}
           {...card}
@@ -273,6 +284,7 @@ Lane.propTypes = {
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
+  onCardUpdate: PropTypes.func,
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
@@ -287,7 +299,8 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  onCardUpdate: () => {}
 }
 
 const mapDispatchToProps = dispatch => ({

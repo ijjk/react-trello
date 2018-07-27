@@ -52,9 +52,9 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-	z-index: 1000;
-	padding: 0px 5px;
-	margin-bottom: 0px;
+  z-index: 1000;
+  padding: 0px 5px;
+  margin-bottom: 0px;
 `
 
 export const LaneFooter = styled.div`
@@ -67,16 +67,16 @@ export const LaneFooter = styled.div`
 `
 
 export const ScrollableLane = styled.div`
-	flex: 1;
-	overflow-y: auto;
-	min-width: 250px;
-	overflow-x: hidden;
-	align-self: center;
-	max-height: 90vh;
-	padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
-	margin-top: 10px;
-	flex-direction: column;
-	justify-content: space-between;
+  flex: 1;
+  overflow-y: auto;
+  min-width: 250px;
+  overflow-x: hidden;
+  align-self: center;
+  max-height: 90vh;
+  padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const Title = styled.span`
@@ -90,8 +90,8 @@ export const Title = styled.span`
 export const RightContent = styled.span`
   width: 30%;
   text-align: right;
-  padding-right: 10px;
   font-size: 13px;
+  min-height: 13px;
 `
 export const CardWrapper = styled.article`
   border-radius: 3px;

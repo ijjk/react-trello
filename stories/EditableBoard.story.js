@@ -54,6 +54,11 @@ storiesOf('Editable Board', module)
         console.dir(card)
       }
 
+      const handleCardUpdate = (card, laneId) => {
+        console.log(`Card updated in lane ${laneId}`)
+        console.dir(card)
+      }
+
       return (
         <Board
           data={data}
@@ -62,7 +67,7 @@ storiesOf('Editable Board', module)
           onDataChange={shouldReceiveNewData}
           onCardDelete={handleCardDelete}
           onCardAdd={handleCardAdd}
-          onCardClick={(cardId, metadata, laneId) => alert(`Card with id:${cardId} clicked. Card in lane: ${laneId}`)}
+          onCardUpdate={handleCardUpdate}
           editable
         />
       )
